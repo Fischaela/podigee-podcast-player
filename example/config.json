@@ -1,13 +1,15 @@
 {
   "options": {
     "theme": "tsp",
-    "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
-    "startPanel": "ChapterMarks"
+    "sslProxy": "https://cdn.podigee.com/ssl-proxy/"
   },
   "extensions": {
-    "ChapterMarks": {},
+    "ChapterMarks": { "disabled": true },
     "EpisodeInfo": {},
-    "Share": {}
+    "Playlist": { "disabled": true },
+    "Share": {},
+    "Transcript": { "disabled": true },
+    "Waveform": { "disabled": true }
   },
   "podcast": {
     "feed": "https://cdn.podigee.com/ppp/samples/feed.xml"
