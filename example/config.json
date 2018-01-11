@@ -12,7 +12,8 @@
     "Waveform": { "disabled": true }
   },
   "podcast": {
-    "feed": "https://cdn.podigee.com/ppp/samples/feed.xml"
+    "feed": "https://cdn.podigee.com/ppp/samples/feed.xml",
+    "title": "5 Minuten Berlin"
   },
   "episode": {
     "media": {

@@ -21,12 +21,16 @@
     cursor: pointer;
     outline: none; }
   .podcast-player .main-player {
-    position: relative; }
+    position: relative;
+    overflow: auto; }
   .podcast-player .episode-basic-info {
     max-height: 90px;
-    padding: 23px 12px 0;
+    padding: 30px 12px 0;
     position: relative;
     overflow: hidden; }
+    @media (max-width: 500px) {
+      .podcast-player .episode-basic-info {
+        padding-top: 10px; } }
     .podcast-player .episode-basic-info .episode-title {
       color: #CE0000;
       font-size: 18px;
@@ -43,8 +47,8 @@
       white-space: nowrap; }
   .podcast-player .cover-image {
     float: right;
-    height: 90px;
-    padding: 5px; }
+    height: 120px;
+    padding: 18px; }
   .podcast-player .controls {
     float: left;
     height: 90px; }
@@ -54,7 +58,7 @@
       color: #A9A498;
       font-size: 56px;
       height: 70px;
-      margin: 10px 0 0 10px;
+      margin: 25px 0 0 20px;
       padding: 0;
       width: 70px; }
   .podcast-player .controls-advanced {
@@ -75,8 +79,15 @@
   .podcast-player.playing .controls-advanced {
     display: block; }
   .podcast-player .progress-bar {
-    clear: both;
-    overflow: hidden; }
+    overflow: hidden;
+    margin: 14px 120px 30px 100px;
+    border-radius: 4px;
+    width: calc(100% - 230px);
+    height: 6px; }
+    @media (max-width: 500px) {
+      .podcast-player .progress-bar {
+        margin: 30px 0 70px 80px;
+        width: calc(100% - 110px); } }
     .podcast-player .progress-bar .progress-bar-time-played {
       color: #A9A498;
       cursor: pointer;
@@ -132,8 +143,8 @@
     background-position: 50px 50px; } }
   .podcast-player .buttons {
     position: absolute;
-    right: 90px;
-    top: 68px; }
+    right: 125px;
+    top: 30px; }
     .podcast-player .buttons button {
       color: #A9A498;
       display: inline-block;
@@ -281,17 +292,25 @@
   .podcast-player.mode-script .cover-image {
     border: 12px solid #EBEAE4;
     border-bottom: 0;
-    display: none;
+    display: block;
     float: none;
+    margin: 0 auto;
     height: auto;
-    width: 100%; }
+    width: 66%; }
   .podcast-player.mode-script .episode-basic-info .episode-title {
     font-size: 16px; }
   .podcast-player.mode-script .episode-basic-info .episode-subtitle {
     font-size: 14px; }
   .podcast-player.mode-script .controls {
-    height: 115px;
-    position: relative; }
+    height: 50px;
+    position: absolute;
+    bottom: 46px;
+    left: 20px; }
+    .podcast-player.mode-script .controls button {
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      font-size: 44px; }
   .podcast-player.mode-script .controls-advanced {
     bottom: 20px;
     left: 0;
@@ -301,8 +320,12 @@
       padding: 0 8px; }
   .podcast-player.mode-script .buttons {
     margin-top: 25px;
-    position: static;
-    text-align: right; }
+    position: absolute;
+    text-align: right;
+    bottom: 20px;
+    top: auto;
+    right: 50%;
+    transform: translateX(50%); }
     .podcast-player.mode-script .buttons button {
       font-size: 24px;
       padding: 0 8px;
