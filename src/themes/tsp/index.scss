@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
 
-  background-color: $background-color;
+  background-color: transparent;
   color: #222;
   font-family: Helvetica;
   min-width: 100%;
@@ -38,13 +38,9 @@
 
   .episode-basic-info {
     max-height: 90px;
-    padding: 30px $default-padding 0;
+    padding: 30px 84px 0 $default-padding;
     position: relative;
     overflow: hidden;
-
-    @media (max-width: $mobile-breakpoint) {
-      padding-top: 10px;
-    }
 
     .episode-title {
       color: $highlight1;
@@ -134,7 +130,7 @@
       right: 120px;
       position: absolute;
       text-align: left;
-      top: 64px;
+      top: 56px;
       width: 70px;
     }
 
@@ -429,6 +425,9 @@
     }
 
     .episode-basic-info {
+      padding-top: 10px;
+      padding-right: 12px;
+
       .episode-title {
         font-size: 16px;
       }
