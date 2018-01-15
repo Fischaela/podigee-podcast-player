@@ -6,7 +6,7 @@
   "extensions": {
     "ChapterMarks": { "disabled": true },
     "EpisodeInfo": {},
-    "Playlist": { "disabled": true },
+    "Playlist": {},
     "Share": {},
     "Transcript": { "disabled": true },
     "Waveform": { "disabled": true }
