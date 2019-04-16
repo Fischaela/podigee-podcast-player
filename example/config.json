@@ -1,6 +1,6 @@
 {
   "options": {
-    "theme": "theme-3-posts-colorscheme--default",
+    "theme": "theme-3-main-colorscheme--default",
     "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
     "startPanel": "Playlist"
   },
