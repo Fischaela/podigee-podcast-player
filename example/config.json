@@ -1,19 +1,15 @@
 {
   "options": {
-    "theme": "game-of-thrones",
+    "theme": "theme-4-posts-colorscheme--05",
     "sslProxy": "https://cdn.podigee.com/ssl-proxy/",
-    "startPanels": ["Share", "Playlist", "EpisodeInfo"]
+    "startPanel": "Playlist"
   },
   "extensions": {
-    "EpisodeInfo": {
-      "showOnStart": true
-    },
-    "Playlist": {
-      "showOnStart": true
-    },
-    "Share": {
-      "showOnStart": true
-    }
+    "ChapterMarks": {},
+    "EpisodeInfo": {},
+    "Playlist": {},
+    "Transcript": {},
+    "SubscribeBar": {}
   },
   "podcast": {
     "feed": "https://cdn.podigee.com/ppp/samples/feed.xml",
